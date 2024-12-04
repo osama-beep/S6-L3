@@ -1,0 +1,33 @@
+@import 'partials/reset';
+@import 'partials/colors';
+@import 'partials/fonts';
+@import 'partials/spacings';
+@import 'partials/buttons';
+@import 'partials/mixins';
+@import 'partials/animations';
+@import 'partials/layout';
+
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+nav {
+  ul {
+    @include flex-center;
+    gap: $spacing-medium;
+  }
+}
+
+section {
+  @include flex-center;
+  flex-direction: column;
+  gap: $spacing-medium;
+  margin-top: $spacing-large;
+
+  button {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}

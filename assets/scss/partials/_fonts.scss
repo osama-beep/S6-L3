@@ -1,0 +1,12 @@
+$base-font-size: 16px;
+$heading-font-family: 'Arial', Helvetica, Arial, sans-serif;
+$body-font-family: Arial, sans-serif;
+
+body {
+  font-size: $base-font-size;
+  font-family: $body-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+}

@@ -1,0 +1,27 @@
+.btn {
+  padding: $spacing-small $spacing-medium;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  &-primary {
+    background-color: $button-blue;
+    color: white;
+  }
+
+  &-secondary {
+    background-color: $button-green;
+    color: white;
+  }
+
+  &-tertiary {
+    background-color: $button-orange;
+    color: white;
+  }
+}
